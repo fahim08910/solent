@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    min-height: 100vh;
+}
+
+#nav {
+    width: 100%; /* Full width for the nav bar */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    display: flex; /* Add flex to layout the nav items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+#main {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+#main a {
+    color: #007bff;
+}
+
+input, textarea, select, button {
+    width: calc(100% - 22px);
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    color: white;
+    background-color: #dc3545;
+}
+
+.message.success {
+    background-color: #28a745;
+}
+
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0px;
+}
+
+.admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.admin-component {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px; /* Adjust padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.admin-header {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#signupText {
+    text-align: center;
+    margin-top: 20px; 
+}
+#loginText {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
